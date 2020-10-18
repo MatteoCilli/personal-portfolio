@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2><span class="typed-text"></span><span class="cursor"></span></h2>
+            <a href="http://matt.zapto.org/Website/CV/CV2020V4.pdf" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Download CV
+            </a>
+            <a href="http://matt.zapto.org" class="btn" id="covid">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> COVID Project
+            </a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Hi, I'm Matt.</h3>
+                <p>I'm 19 and I love Aviation and Solving Problems.
+                    <br><br>I know the basics of Front End and Back End Developing and can't wait to apply what I've learned</p>
+                <p><br>I also have a couple thousand hours on Flight Sims and a deep love for learning new things. <br><br> I'm constantly in the process of improving myself.</p>
+            </div>
+            <div class="w50">
+                <img src="img/6kr4sfqk.bmp" id="me" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="container1">
+            <div class="card1">
+                <div class="imgBx1">
+                    <img src="img/icon2.png">
+                    <h3>My Skills</h3>
+                </div>
+                <div class="content1">
+                    <ul>
+                        <li>HTML, CSS: Basic</li>
+                        <li>JavaScript: Basic</li>
+                        <li>Frameworks: Basic</li>
+                        <li>D3: Basic</li>
+                        <li>Python: Basic</li>
+                        <li>MySql, PHP: Basic</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="imgBx1">
+                    <img src="img/1200px-White_plane_icon.svg.png">
+                    <h3>Aviation</h3>
+                </div>
+                <div class="content1">
+                    <ul>On Sim:
+                        <li>A320: 1000+ hrs</li>
+                        <li>773: 500 hrs</li>
+                        <li>General Aviation</li>
+                        <li>F/A-18C: 100 hrs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="imgBx1">
+                    <img src="img/1e5a0e75e2419c45574525a5ac5aaf3b.png">
+                    <h3>Languages</h3>
+                </div>
+                <div class="content1">
+                    <ul>Certified:
+                        <li>ITA: Native</li>
+                        <li>ENG: C2</li>
+                        <li>GER: C2</li>
+                    </ul>
+                    <ul>Self-Assessed:
+                        <li>SPA: C1</li>
+                        <li>FRA: B1-B2</li>
+                        <li>RUS: B1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container2">
+            <h1>Projects</h1>
+            <div class="card2">
+                <div class="imgBx2">
+                    <img src="img/kissclipart-virus-flat-icon-clipart-computer-icons-virus-clip-260e9c3957b8fa9d.png">
+                </div>
+                <div class="content2">
+                    <div>
+                        <h3>COVID Tracker</h3>
+                        <p>Fully functional and responsive COVID Tracker.</p>
+                        <ul>
+                            <li>Built with React and Material UI</li>
+                            <li>Live Data from Disease.sh</li>
+                            <li>Uses Charts.js, React Leaflet Map</li>
+                        </ul>
+                        <a href="#" class="btn" id="btnA">Go To</a>
+                        <a href="#" class="btn" id="btnB">Live Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="imgBx2">
+                    <img src="img/airbus-logo-621B603EF9-seeklogo.com.png">
+                </div>
+                <div class="content2">
+                    <div>
+                        <h3>A320 Performance Calculator</h3>
+                        <p>Performance calculator for the A320 Family, both for TO and Landing</p>
+                        <p><strong>Work in Progress</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfoBox">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Via Settembrini, 4 <br>Silvi, Italien<br>64028</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+39 3713742876</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>cilli.matteo@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="contact-form-handler.php" method="post">
+                    <h3>Message Me</h3>
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
